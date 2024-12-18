@@ -1,23 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-.main1 {
-    background-color: #301f15;
-    color: white;
-    position: relative;
-    background-image: url(/images/banner-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 600px;
-    height: 89vh;
-
-
-}
-* {
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -26,7 +9,7 @@
     background-color: #301f15;
     color: white;
     position: relative;
-    background-image: url(/images/banner-removebg-preview.png);
+    background-image: url(images/banner-removebg-preview.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 600px;
