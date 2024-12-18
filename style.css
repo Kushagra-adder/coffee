@@ -1,0 +1,247 @@
+/* Main1 Section */
+.main1 {
+    background-color: #301f15;
+    color: white;
+    position: relative;
+    background-image: url(/images/banner-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover; /* Ensure the background image covers the entire section */
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    width: 70%;
+    text-align: center;
+}
+
+.heading h1 {
+    font-family: "regularJoe";
+    font-size: 130px;
+}
+
+.heading p {
+    margin-top: 0px;
+    font-family: "Skate W00 Bold";
+    font-size: 40px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-size: 30px;
+    right: 10vw; /* Adjust the position */
+    top: 10vh;
+    border-radius: 25px;
+    background-color: #714238;
+    z-index: 1;
+}
+
+.acc {
+    padding: 20px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "poppins";
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.acc:hover {
+    background-color: rgb(177, 144, 144);
+    color: #472a24;
+}
+
+#home {
+    background-color: white;
+    color: #714238;
+}
+
+.main1 img {
+    height: 400px;
+    width: auto; /* Adjust for responsiveness */
+}
+
+/* Main4 Section */
+.main4 {
+    background-color: #281600;
+    font-family: "poppins";
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    gap: 80px;
+    padding: 8vw;
+    flex-wrap: wrap; /* Allow flex items to wrap on smaller screens */
+}
+
+.main4 h1 {
+    color: white;
+}
+
+.main4 h2 {
+    color: rgb(162, 173, 173);
+    font-weight: 500;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px; /* Set a fixed width for the form */
+}
+
+#name,
+#email,
+#message {
+    width: 100%;
+}
+
+.sub {
+    background-color: #dbbca0;
+    height: 50px;
+    color: #281600;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+ul {
+    font-size: large;
+    color: white;
+    list-style: "-";
+}
+
+.main4-right {
+    color: white;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* Center the content for smaller screens */
+    gap: 20px; /* Add some space between elements */
+}
+
+.main4-right .he {
+    width: 200px; /* Reduce the size of the image */
+    height: 200px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.para2,
+.para3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer {
+    background-color: #dbbca0;
+    text-align: center;
+    padding: 20px;
+    font-family: "poppins";
+    font-size: larger;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        right: 5vw; /* Adjust navbar for smaller screens */
+    }
+
+    .main2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .main2 img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .main4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        position: static;
+        width: 100%;
+        align-items: center;
+    }
+
+    .acc {
+        margin: 10px 0;
+    }
+
+    .heading h1 {
+        font-size: 70px;
+    }
+
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .main1 img {
+        height: auto;
+        width: 80%;
+    }
+
+    .main4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main4-right .he {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main1 {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .heading h1 {
+        font-size: 50px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    form input, 
+    form textarea {
+        width: 100%;
+    }
+
+    .main4-right {
+        gap: 10px;
+    }
+
+    .main4-right .he {
+        width: 100px;
+        height: 100px;
+    }
+}
