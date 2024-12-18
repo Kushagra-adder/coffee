@@ -15,7 +15,184 @@
 
 
 }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
+/* Existing styles with subtle enhancements */
+.main1 {
+    background-color: #301f15;
+    color: white;
+    position: relative;
+    background-image: url(/images/banner-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 600px;
+    height: 89vh;
+    overflow: hidden; /* Prevent potential overflow */
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    font-size: 30px;
+    right: 27vw;
+    top: 10vh;
+    border-radius: 25px;
+    background-color: #714238;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.acc {
+    padding: 20px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: "poppins";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.acc:hover {
+    background-color: rgb(177, 144, 144);
+    color: #472a24;
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.acc:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.5s ease;
+    transform: skewX(-45deg);
+}
+
+.acc:hover::before {
+    left: 100%;
+}
+
+#home {
+    background-color: white;
+    color: #714238;
+}
+
+/* Enhanced button styles */
+.bb {
+    background-color: #301f15;
+    height: 60px;
+    color: white;
+    width: 250px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.bb:hover {
+    background-color: #472a24;
+}
+
+.bb::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.5s ease;
+    transform: skewX(-45deg);
+}
+
+.bb:hover::before {
+    left: 100%;
+}
+
+/* Enhanced tab hover effects */
+.tab {
+    transition: all 0.3s ease;
+}
+
+.tab:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Submission button enhancement */
+.sub {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub:hover {
+    background-color: #472a24;
+}
+
+.sub::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.2);
+    transition: all 0.5s ease;
+    transform: skewX(-45deg);
+}
+
+.sub:hover::before {
+    left: 100%;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        right: 10vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        position: static;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .acc {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Smooth scroll and subtle improvements */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Cursor interactions */
+a, button {
+    cursor: pointer;
+}
 
 .heading {
     width: 70%;
@@ -314,3 +491,5 @@ ul {
         width: 100%;
     }
 }
+
+
